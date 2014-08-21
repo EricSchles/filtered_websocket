@@ -9,10 +9,10 @@ Create WebSocket servers by composing filter chains.
 
 from __future__ import absolute_import
 
-from twisted.internet.protocol import Factory
 from twisted.internet import reactor, ssl
 from twisted.internet.task import LoopingCall
-from .server_protocol.server import Protocol
+from autobahn.twisted.websocket import WebSocketServerProtocol as Protocol
+from autobahn.twisted.websocket import WebSocketServerFactory as Factory
 import collections
 import argparse
 import sys

@@ -4,3 +4,4 @@ redis_collections
 six
 pyopenssl
 service_identity
+autobahn
